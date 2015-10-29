@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+}
+
+html {
+}
+
+.header {
+  position: fixed;
+  height: 140px;
+  width: 100%;
+  background-color: #FF6666;
+  text-align: center;
+  border: 2px solid white;
+  margin: auto;
+  color: white;
+  letter-spacing: 1em;
+  animation-name: changecolors;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: changecolors;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: changecolors;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+}
+.subs {
+  margin-top: 15px;
+  font-weight: italic;
+  font-size: 21px;
+  font-family: "Vollkorn";
+}
+.big-name {
+  margin-top: 10px;
+  font-size: 65px;
+  font-family: "Open Sans Condensed";
+  text-transform: uppercase;
+}
+
+.container-me {
+  position: absolute;
+  margin: 180px 80px;
+  margin-bottom: 40px;
+  z-index: -2;
+}
+.first-block {
+  background-color: #80CCFF;
+}
+img.profile-img {
+  margin: auto;
+  display: block;
+  height: 150px;
+  width: 150px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.second-block {
+  background-color: #80FF41;
+}
+.third-block {
+  background-color: #FF944D;
+}
+.first-block, .second-block, .third-block {
+@-webkit-keyframes changecolors {
+  padding: 50px;
+  height: 400px;
+}
+
+@keyframes changecolors {
+  0% {background-color: #FF6666}
+  50% {background-color: #FF5599}
+  100% {background-color: #FF6666}
+}
+  0% {background-color: #FF6666}
+  50% {background-color: #FF5599}
+  100% {background-color: #FF6666}
+}
+@-moz-keyframes changecolors {
+  0% {background-color: #FF6666}
+  50% {background-color: #FF5599}
+  100% {background-color: #FF6666}
+}
+
+@media (max-width: 780px) {
+  .header {
+    height: 70px;
+    letter-spacing: 0.5em;
+  }
+  .container-me {
+    margin: 85px 40px;
+    margin-bottom: 20px;
+  }
+  .subs {
+    margin-top: 7px;
+    font-weight: italic;
+    font-size: 10px;
+    font-family: "Vollkorn";
+  }
+  .big-name {
+    margin-top: 5px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed";
+  }
+  .first-block, .second-block, .third-block {
+    padding: 25px;
+  }
+}
