@@ -3,31 +3,52 @@
 }
 
 html {
+  width: 100%;
 }
 
 body {
 }
 
+#tohome {
+  position: absolute;
+  transform: translateY(-190px);
+}
+#tofirst {
+  position: absolute;
+  transform: translateY(-190px);
+}
+#tosecond {
+  position: absolute;
+  transform: translateY(-190px);
+}
+#tothird {
+  position: absolute;
+  transform: translateY(-190px);
+}
+
 .header {
   height: 140px;
-  width: 100%;
   text-align: center;
   position: fixed;
+  background-image: url(../images/nightsky.jpg);
+  background-position: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: pink;
-  border: 2px solid white;
   margin: auto;
   color: white;
   letter-spacing: 1em;
 }
 .subs {
-  margin-top: 15px;
   font-weight: italic;
+  margin-top: 15px;
   font-size: 21px;
   font-family: "Vollkorn";
 }
 .big-name {
-  margin-top: 10px;
   font-size: 65px;
+  margin-top: 10px;
   font-family: "Open Sans Condensed";
   text-transform: uppercase;
 }
@@ -39,13 +60,142 @@ body {
   background-color: blue;
   z-index: -5;
   top: 140px;
-  border: 5px solid green;
+  left: 0;
+  text-align: center;
+}
+
+.outline div {
+  color: black;
+  padding-top: 25%;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+}
+
+.links a:hover {
+  text-decoration: none;
+}
+
+.outline div.home {
+  font-size: 20px;
+  padding-top: 20%;
+}
+
+.header-one {
+  font-family: "Open Sans Condensed";
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
+
+.profile {
+  font-family: "Vollkorn";
+  font-size: 20px;
+  text-align: center;
+}
+
+.links {
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.links i{
+  display: inline;
+  font-size: 200px;
+}
+
+.start {
+  color: white;
+  background: black;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
 }
 
 .black, .white {
   display: inline;
 }
 
+.home {
+  display: block;
+  width: 100%;
+  background-color: #607F90;
+  height: 25%;
+  animation-name: home;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: home;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: home;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+
+}
+
+.choice-1 {
+  display: block;
+  width: 100%;
+  height: 25%;
+
+  background-color: #81BBAD;
+  animation-name: choiceone;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: choiceone;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: choiceone;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+
+}
+.choice-2 {
+  display: block;
+  width: 100%;
+  height: 25%;
+
+  background-color: #BBDDC0;
+  animation-name: choicetwo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: choicetwo;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: choicetwo;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+
+}
+.choice-3 {
+  display: block;
+  width: 100%;
+  height: 25%;
+
+  background-color: #F3FBDA;
+  animation-name: choicethree;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: choicethree;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: choicethree;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+
+}
 
 .container-me {
   position: absolute;
@@ -53,10 +203,12 @@ body {
   z-index: -3;
 }
 .front-page {
-  font-family: 'Sigmar One', cursive;
+  font-family: 'Coda', cursive;
+  font-weight: bolder;
   font-size: 300px;
   background-color: green;
-  height: 500px;
+  height: 520px;
+  margin: 0;
 }
 .black {
   background-color: black;
@@ -78,19 +230,68 @@ body {
   bottom: 1%;
   left: 10%;
 }
+
 .first-block {
-  background-color: #80CCFF;
+  background-color: #81BBAD;
+  animation-name: choiceone;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: choiceone;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: choiceone;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
 }
 .second-block {
-  background-color: #80FF41;
+  background-color: #BBDDC0;
+  animation-name: choicetwo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: choicetwo;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: choicetwo;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
 }
 .third-block {
-  background-color: #FF944D;
+  background-color: #F3FBDA;
+  animation-name: choicethree;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: choicethree;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: choicethree;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
 }
 .first-block, .second-block, .third-block {
   padding: 50px;
-  height: 400px;
   margin-left: 20%;
+}
+
+.images img {
+  display: inline;
+  width: calc(25% - 20px);
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 5px solid white;
+  border-radius: 3px;
+}
+
+.images img:hover {
+  border: 5px solid #81BBAD;
 }
 
 img.profile-img {
@@ -155,4 +356,116 @@ img.profile-img {
     height: calc(100% - 70px);
     top: 70px;
   }
+  .front-page {
+    font-size: 120px;
+  }
+  .R {
+    top: 25%;
+  }
+  .C {
+    bottom: 25%;
+  }
+  #tohome, #tofirst, #tosecond, #tothird {
+    transform: translateY(-95px);
+  }
+  .outline div {
+    font-size: 20px;
+  }
+  .outline div.home {
+    font-size: 10px;
+  }
+}
+
+.extra {
+  text-align: left;
+  color: black;
+  font-size: 10px;
+}
+
+@keyframes home {
+  0% {background-color: #607F90}
+  25% {background-color: #81BBAD}
+  50% {background-color: #BBDDC0}
+  75% {background-color: #F3FBDA}
+  100% {background-color: #607F90}
+}
+@-webkit-ketframes home {
+  0% {background-color: #607F90}
+  25% {background-color: #81BBAD}
+  50% {background-color: #BBDDC0}
+  75% {background-color: #F3FBDA}
+  100% {background-color: #607F90}
+}
+@-moz-keyframes home {
+  0% {background-color: #607F90}
+  25% {background-color: #81BBAD}
+  50% {background-color: #BBDDC0}
+  75% {background-color: #F3FBDA}
+  100% {background-color: #607F90}
+}
+
+@keyframes choiceone {
+  0% {background-color: #81BBAD}
+  25% {background-color: #BBDDC0}
+  50% {background-color: #F3FBDA}
+  75% {background-color: #607F90}
+  100% {background-color: #81BBAD}
+}
+@-webkit-ketframes choiceone {
+  0% {background-color: #81BBAD}
+  25% {background-color: #BBDDC0}
+  50% {background-color: #F3FBDA}
+  75% {background-color: #607F90}
+  100% {background-color: #81BBAD}
+}
+@-moz-keyframes choiceone {
+  0% {background-color: #81BBAD}
+  25% {background-color: #BBDDC0}
+  50% {background-color: #F3FBDA}
+  75% {background-color: #607F90}
+  100% {background-color: #81BBAD}
+}
+
+@keyframes choicetwo {
+  0% {background-color: #BBDDC0}
+  25% {background-color: #F3FBDA}
+  50% {background-color: #607F90}
+  75% {background-color: #81BBAD}
+  100% {background-color: #BBDDC0}
+}
+@-webkit-ketframes choicetwo {
+  0% {background-color: #BBDDC0}
+  25% {background-color: #F3FBDA}
+  50% {background-color: #607F90}
+  75% {background-color: #81BBAD}
+  100% {background-color: #BBDDC0}
+}
+@-moz-keyframes choicetwo {
+  0% {background-color: #BBDDC0}
+  25% {background-color: #F3FBDA}
+}
+  50% {background-color: #607F90}
+  75% {background-color: #81BBAD}
+  100% {background-color: #BBDDC0}
+
+@keyframes choicethree {
+  0% {background-color: #F3FBDA}
+  25% {background-color: #607F90}
+  50% {background-color: #81BBAD}
+  75% {background-color: #BBDDC0}
+  100% {background-color: #F3FBDA}
+}
+@-webkit-ketframes choicethree {
+  0% {background-color: #F3FBDA}
+  25% {background-color: #607F90}
+  50% {background-color: #81BBAD}
+  75% {background-color: #BBDDC0}
+  100% {background-color: #F3FBDA}
+}
+@-moz-keyframes choicethree {
+  0% {background-color: #F3FBDA}
+  25% {background-color: #607F90}
+  50% {background-color: #81BBAD}
+  75% {background-color: #BBDDC0}
+  100% {background-color: #F3FBDA}
 }
