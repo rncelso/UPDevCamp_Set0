@@ -5,15 +5,15 @@
 html {
 }
 
+body {
+}
+
 .header {
-  position: fixed;
   height: 140px;
   width: 100%;
   text-align: center;
-  background-image: url("../images/");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  position: fixed;
+  background-color: pink;
   border: 2px solid white;
   margin: auto;
   color: white;
@@ -32,15 +32,67 @@ html {
   text-transform: uppercase;
 }
 
+.outline {
+  position: fixed;
+  width: 20%;
+  height: calc(100% - 140px);
+  background-color: blue;
+  z-index: -5;
+  top: 140px;
+  border: 5px solid green;
+}
+
+.black, .white {
+  display: inline;
+}
+
+
 .container-me {
   position: absolute;
-  margin: 180px 80px;
-  margin-bottom: 40px;
-  z-index: -2;
+  top: 140px;
+  z-index: -3;
+}
+.front-page {
+  font-family: 'Sigmar One', cursive;
+  font-size: 300px;
+  background-color: green;
+  height: 500px;
+}
+.black {
+  background-color: black;
+  height: 100%;
+}
+.R {
+  position: absolute;
+  color: black;
+  top: 1%;
+  right: 10%;
+}
+.white {
+  background-color: white;
+  height: 100%;
+}
+.C {
+  position: absolute;
+  color: white;
+  bottom: 1%;
+  left: 10%;
 }
 .first-block {
   background-color: #80CCFF;
 }
+.second-block {
+  background-color: #80FF41;
+}
+.third-block {
+  background-color: #FF944D;
+}
+.first-block, .second-block, .third-block {
+  padding: 50px;
+  height: 400px;
+  margin-left: 20%;
+}
+
 img.profile-img {
   margin: auto;
   display: block;
@@ -57,17 +109,6 @@ img.profile-img {
 @-webkit-keyframes rotateimg {
   0% {transform: rotate(0deg)}
   100% {transform: rotate(-360deg)}
-}
-
-.second-block {
-  background-color: #80FF41;
-}
-.third-block {
-  background-color: #FF944D;
-}
-.first-block, .second-block, .third-block {
-  padding: 50px;
-  height: 400px;
 }
 
 @keyframes moveleft {
@@ -93,8 +134,7 @@ img.profile-img {
     letter-spacing: 0.5em;
   }
   .container-me {
-    margin: 85px 40px;
-    margin-bottom: 20px;
+    top: 70px;
   }
   .subs {
     margin-top: 7px;
@@ -110,5 +150,9 @@ img.profile-img {
   }
   .first-block, .second-block, .third-block {
     padding: 25px;
+  }
+  .outline {
+    height: calc(100% - 70px);
+    top: 70px;
   }
 }
